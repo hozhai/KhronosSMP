@@ -2,7 +2,6 @@
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"hello_world": "Hola, {name} desde es!",
 	"home_title": "Inicio | KhronosSMP",
-	"home_seo_description": "La página de inicio de KhronosSMP, un MORPG basado en el tiempo. ¡Únete hoy!",
 	"home_presenting": "Presentando...",
 	"home_join": "¡Ùnete!",
 	"home_learn": "¡Aprende más!",

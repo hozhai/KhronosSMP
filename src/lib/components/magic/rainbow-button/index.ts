@@ -1,1 +1,1 @@
-export { default as RainbowButton } from "./rainbow-button.svelte";
+export { default as RainbowButton } from './rainbow-button.svelte';

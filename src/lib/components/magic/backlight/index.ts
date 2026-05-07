@@ -1,1 +1,1 @@
-export { default as Backlight } from "./backlight.svelte";
+export { default as Backlight } from './backlight.svelte';

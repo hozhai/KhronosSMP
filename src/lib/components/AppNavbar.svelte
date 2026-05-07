@@ -11,7 +11,9 @@
 	} from './ui/navigation-menu/index';
 	import { cn } from '$lib/utils';
 	import TempleImage from '$lib/assets/temple.png';
+	// @ts-ignore - generated Paraglide messages do not ship a declaration file here
 	import { getLocale, setLocale } from '$lib/paraglide/runtime';
+	// @ts-ignore - generated Paraglide messages do not ship a declaration file here
 	import * as m from '$lib/paraglide/messages';
 	import { Button } from './ui/button';
 	import Icon from '@iconify/svelte';
@@ -127,7 +129,7 @@
 </motion.div>
 <!-- Language selector -->
 <div class="fixed top-4 right-4 z-50">
-	<Button onclick={toggleLang} class="cursor-pointer rounded-full">
+	<Button variant="outline" onclick={toggleLang} class="cursor-pointer rounded-full">
 		<Icon icon="pixelarticons:languages" />
 	</Button>
 </div>

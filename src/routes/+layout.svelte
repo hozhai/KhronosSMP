@@ -60,9 +60,9 @@
 			whilePress={{
 				scale: 0.9
 			}}
-			onclick={() => scrollTo('#top')}
+			onclick={() => document.querySelector('#top')?.scrollIntoView()}
 		>
-			<Button class="h-12 w-12 bg-accent text-accent-foreground">
+			<Button class="h-12 w-12 cursor-pointer bg-accent text-accent-foreground">
 				<Icon icon="pixelarticons:arrow-bar-up" class="size-8" />
 			</Button>
 		</motion.div>

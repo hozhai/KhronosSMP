@@ -7,8 +7,8 @@
 	import { BlurFade } from '$lib/components/magic/blur-fade';
 	import { InteractiveHoverButton } from '$lib/components/magic/interactive-hover-button';
 	import Icon from '@iconify/svelte';
-	import { goto } from '$app/navigation';
 	import { resolve } from '$app/paths';
+	// @ts-ignore - generated Paraglide messages do not ship a declaration file here
 	import * as m from '$lib/paraglide/messages';
 	import Seo from '$lib/components/Seo.svelte';
 	import HomeSeoImage from '$lib/assets/home_seo_image.png';
@@ -17,7 +17,8 @@
 <svelte:head>
 	<Seo
 		title={m.home_title()}
-		description={m.home_seo_description()}
+		embedTitle="Home - KhronosSMP"
+		description="The home page of KhronosSMP, a time based MORPG in Minecraft. Join today!"
 		url={$page.url.href}
 		imageUrl={HomeSeoImage}
 	/>
@@ -76,7 +77,10 @@
 			class="font-sans uppercase "
 			><Icon icon="ic:baseline-discord" class="mr-2" />{m.home_join()}</InteractiveHoverButton
 		>
-		<InteractiveHoverButton onclick={() => goto(resolve('/#about'))} class="font-sans uppercase">
+		<InteractiveHoverButton
+			onclick={() => document.querySelector('#about')?.scrollIntoView()}
+			class="font-sans uppercase"
+		>
 			<Icon icon="pixelarticons:more-horizontal-sharp" class="mr-2" />{m.home_learn()}
 		</InteractiveHoverButton>
 	</BlurFade>

@@ -1,5 +1,8 @@
 <script>
 	import RulesBackground from '$lib/assets/rules-background.png?enhanced';
+	import RulesSeoBackground from '$lib/assets/rules-seo-background.png?enhanced';
+	import Seo from '$lib/components/Seo.svelte';
+	import { page } from '$app/stores';
 	import { getLocale } from '$lib/paraglide/runtime';
 	import En, { metadata as metadata_en } from './index.en.md';
 	import Es, { metadata as metadata_es } from './index.es.md';
@@ -11,6 +14,16 @@
 	const Content = components[lang] ?? En;
 	const frontmatter = frontmatters[lang] ?? metadata_en;
 </script>
+
+<svelte:head>
+	<Seo
+		title={frontmatter.title}
+		embedTitle="Rules - KhronosSMP"
+		description="The rules of the kingdom of Khronos. Follow these or you shall be banished (for a certain period of time, or, you know, permanently)."
+		url={$page.url.href}
+		imageUrl={RulesSeoBackground}
+	/>
+</svelte:head>
 
 <div
 	class="pointer-events-none relative top-0 left-0 h-128 w-screen overflow-hidden bg-radial from-transparent to-black text-center font-mc text-7xl"
