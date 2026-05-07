@@ -9,10 +9,17 @@
 	import { goto } from '$app/navigation';
 	import { resolve } from '$app/paths';
 	import * as m from '$lib/paraglide/messages';
+	import Seo from '$lib/components/Seo.svelte';
+	import HomeSeoImage from '$lib/assets/home_seo_image.png';
 </script>
 
 <svelte:head>
-	<title>{m.home_title()}</title>
+	<Seo
+		title={m.home_title()}
+		description={m.home_seo_description()}
+		url={window.location.href}
+		imageUrl={HomeSeoImage}
+	/>
 </svelte:head>
 
 <enhanced:img src={HeroBackground} class="h-screen w-screen" alt="Background" />

@@ -6,7 +6,6 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.png';
 	import AppNavbar from '$lib/components/AppNavbar.svelte';
-	import ClientOnly from '$lib/components/ClientOnly.svelte';
 	import { onNavigate } from '$app/navigation';
 
 	onNavigate((navigation) => {
@@ -27,13 +26,9 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<ClientOnly>
-	<ModeWatcher />
-</ClientOnly>
+<ModeWatcher />
 
-<ClientOnly>
-	<AppNavbar />
-</ClientOnly>
+<AppNavbar />
 
 {@render children()}
 
