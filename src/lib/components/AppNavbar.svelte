@@ -86,7 +86,9 @@
 								class="relative flex h-full w-full flex-col justify-end rounded-md p-4 no-underline outline-hidden select-none focus:shadow-md md:p-6"
 								style={`background-image: url('${TempleImage}'); background-size: cover; background-position: center;`}
 							>
-								{#snippet child({ props })}
+								{#snippet child(
+									{ props = {} }: { props?: Record<string, unknown> } = { props: {} }
+								)}
 									<div {...props} class="size-64 rounded-xl"></div>
 								{/snippet}
 							</NavigationMenuLink>
