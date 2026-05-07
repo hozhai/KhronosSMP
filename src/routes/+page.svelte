@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { motion, prefersReducedMotion } from 'motion-sv';
-	import TitleImage from '$lib/assets/server_title.png';
-	import HeroBackground from '$lib/assets/hero-background.png';
+	import TitleImage from '$lib/assets/server_title.png?enhanced';
+	import HeroBackground from '$lib/assets/hero-background.png?enhanced';
 	import { Backlight } from '$lib/components/magic/backlight';
 	import { BlurFade } from '$lib/components/magic/blur-fade';
 	import { InteractiveHoverButton } from '$lib/components/magic/interactive-hover-button';
