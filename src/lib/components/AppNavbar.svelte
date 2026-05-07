@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { motion } from 'motion-sv';
 	import type { HTMLAttributes } from 'svelte/elements';
-	import { resolve } from '$app/paths';
 	import {
 		NavigationMenuRoot,
 		NavigationMenuList,
@@ -12,41 +11,33 @@
 	} from './ui/navigation-menu/index';
 	import { cn } from '$lib/utils';
 	import TempleImage from '$lib/assets/temple.png';
+	import { getLocale, setLocale } from '$lib/paraglide/runtime';
+	import * as m from '$lib/paraglide/messages';
+	import { Button } from './ui/button';
+	import Icon from '@iconify/svelte';
+
+	const locale = (typeof getLocale === 'function' ? getLocale() : undefined) ?? 'en';
+	const lang = locale.split('-')[0] ?? 'en';
+
+	function toggleLang() {
+		if (lang == 'en') {
+			setLocale('es');
+			return;
+		}
+
+		setLocale('en');
+	}
 
 	const components: { title: string; href: string; description: string }[] = [
 		{
-			title: 'Alert Dialog',
-			href: '/docs/components/alert-dialog',
-			description:
-				'A modal dialog that interrupts the user with important content and expects a response.'
+			title: m.navbar_rules(),
+			href: '/guide/rules',
+			description: m.navbar_rules_desc()
 		},
 		{
-			title: 'Hover Card',
-			href: '/docs/components/hover-card',
-			description: 'For sighted users to preview content available behind a link.'
-		},
-		{
-			title: 'Progress',
-			href: '/docs/components/progress',
-			description:
-				'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.'
-		},
-		{
-			title: 'Scroll-area',
-			href: '/docs/components/scroll-area',
-			description: 'Visually or semantically separates content.'
-		},
-		{
-			title: 'Tabs',
-			href: '/docs/components/tabs',
-			description:
-				'A set of layered sections of content—known as tab panels—that are displayed one at a time.'
-		},
-		{
-			title: 'Tooltip',
-			href: '/docs/components/tooltip',
-			description:
-				'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.'
+			title: m.navbar_info(),
+			href: '/guide/info',
+			description: m.navbar_info_desc()
 		}
 	];
 
@@ -69,7 +60,7 @@
 					)}
 					{...restProps}
 				>
-					<div class="font-serif text-sm leading-none font-medium">{title}</div>
+					<div class="font-mc text-sm leading-none font-medium">{title}</div>
 					<p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
 						{content}
 					</p>
@@ -80,12 +71,12 @@
 {/snippet}
 
 <motion.div
-	class="itms-center fixed top-4 left-1/2 z-50 flex w-[30vw] -translate-x-1/2 justify-center rounded-lg bg-card p-2"
+	class="itms-center fixed top-4 left-1/2 z-50 flex w-[30vw] -translate-x-1/2 justify-center rounded-lg p-2"
 >
 	<NavigationMenuRoot>
-		<NavigationMenuList class="w-[30vw] justify-between space-x-4">
+		<NavigationMenuList class="w-[30vw] items-start justify-between space-x-4 px-4">
 			<NavigationMenuItem>
-				<NavigationMenuTrigger class="cursor-pointer font-serif text-xl uppercase"
+				<NavigationMenuTrigger class="cursor-pointer font-mc text-sm uppercase"
 					>Home</NavigationMenuTrigger
 				>
 				<NavigationMenuContent>
@@ -96,9 +87,7 @@
 								style={`background-image: url('${TempleImage}'); background-size: cover; background-position: center;`}
 							>
 								{#snippet child({ props })}
-									<div {...props}>
-										<div class="mt-4 mb-2 font-serif text-lg font-medium">KhronosSMP</div>
-									</div>
+									<div {...props} class="size-64 rounded-xl"></div>
 								{/snippet}
 							</NavigationMenuLink>
 						</li>
@@ -116,25 +105,27 @@
 				</NavigationMenuContent>
 			</NavigationMenuItem>
 			<NavigationMenuItem class="">
-				<NavigationMenuTrigger class="font-serif text-xl uppercase"
+				<NavigationMenuTrigger class="cursor-pointer font-mc text-sm uppercase"
 					>Quicklinks</NavigationMenuTrigger
 				>
 				<NavigationMenuContent class="w-full">
 					<ul class="grid w-75 gap-2 p-2 sm:w-100 md:w-125 md:grid-cols-2 lg:w-150">
-						<li>
-							<NavigationMenuLink class="cursor-pointer">
-								<a
-									href={resolve('/')}
-									class="block space-y-1 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-								>
-									<div class="text-sm leading-none font-medium">Rules</div>
-									<p class="line-clamp-2 text-sm leading-snug text-muted-foreground">Hi</p>
-								</a>
-							</NavigationMenuLink>
-						</li>
+						{#each components as component, i (i)}
+							{@render ListItem({
+								href: component.href,
+								title: component.title,
+								content: component.description
+							})}
+						{/each}
 					</ul>
 				</NavigationMenuContent>
 			</NavigationMenuItem>
 		</NavigationMenuList>
 	</NavigationMenuRoot>
 </motion.div>
+<!-- Language selector -->
+<div class="fixed top-4 right-4 z-50">
+	<Button onclick={toggleLang} class="cursor-pointer rounded-full">
+		<Icon icon="pixelarticons:languages" />
+	</Button>
+</div>

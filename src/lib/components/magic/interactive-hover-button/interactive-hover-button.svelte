@@ -24,7 +24,7 @@
 			class="h-2 w-2 rounded-full bg-primary transition-all duration-300 group-hover:scale-[100.8]"
 		></div>
 		<span
-			class="inline-block transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0"
+			class="inline-flex items-center transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0"
 		>
 			{@render children()}
 		</span>

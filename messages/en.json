@@ -1,4 +1,15 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!"
+	"hello_world": "Hello, {name} from en!",
+	"home_title": "Home | KhronosSMP",
+	"home_presenting": "Presenting...",
+	"home_join": "Join Us!",
+	"home_learn": "Learn More!",
+	"home_about": "> About KhronosSMP",
+	"home_about_content": "KhronosSMP is a small private Minecraft MORPG (multiplayer online role-playing game) with time as its main concept. Each second, your time's counter goes down by a second, only to be replenished by a trip to the Temple of Time, where through an interaction with a sacred object, you will gain an hour. Throughout that trip, you will face friends and foes; those who will help you cross the PvP zone, and those that will kill for time (or money) (or both). If you're planning to play, check out",
+	"home_guide_text": "this guide",
+	"navbar_rules": "Rules",
+	"navbar_info": "Info",
+	"navbar_rules_desc": "The rulesets of our server, available in both English and Spanish.",
+	"navbar_info_desc": "Find out how the server works in more detail. Also available in both English and Spanish!"
 }
