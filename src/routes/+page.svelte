@@ -2,6 +2,7 @@
 	import { motion, prefersReducedMotion } from 'motion-sv';
 	import TitleImage from '$lib/assets/server_title.png?enhanced';
 	import HeroBackground from '$lib/assets/hero-background.png?enhanced';
+	import { page } from '$app/stores';
 	import { Backlight } from '$lib/components/magic/backlight';
 	import { BlurFade } from '$lib/components/magic/blur-fade';
 	import { InteractiveHoverButton } from '$lib/components/magic/interactive-hover-button';
@@ -17,7 +18,7 @@
 	<Seo
 		title={m.home_title()}
 		description={m.home_seo_description()}
-		url={window.location.href}
+		url={$page.url.href}
 		imageUrl={HomeSeoImage}
 	/>
 </svelte:head>

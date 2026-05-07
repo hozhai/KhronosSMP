@@ -7,6 +7,9 @@
 	import favicon from '$lib/assets/favicon.png';
 	import AppNavbar from '$lib/components/AppNavbar.svelte';
 	import { onNavigate } from '$app/navigation';
+	import { Button } from '$lib/components/ui/button';
+	import Icon from '@iconify/svelte';
+	import { AnimatePresence, motion } from 'motion-sv';
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
@@ -19,6 +22,8 @@
 		});
 	});
 
+	let scrollY = $state(0);
+
 	let { children } = $props();
 </script>
 
@@ -26,11 +31,43 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<svelte:window bind:scrollY />
+
 <ModeWatcher />
 
 <AppNavbar />
 
+<div id="top" class="h-0 w-screen"></div>
+
 {@render children()}
+
+<AnimatePresence>
+	{#if scrollY > 100}
+		<motion.div
+			class="fixed right-10 bottom-10 cursor-pointer"
+			initial={{
+				opacity: 0
+			}}
+			animate={{
+				opacity: 1
+			}}
+			exit={{
+				opacity: 0
+			}}
+			whileHover={{
+				scale: 1.2
+			}}
+			whilePress={{
+				scale: 0.9
+			}}
+			onclick={() => scrollTo('#top')}
+		>
+			<Button class="h-12 w-12 bg-accent text-accent-foreground">
+				<Icon icon="pixelarticons:arrow-bar-up" class="size-8" />
+			</Button>
+		</motion.div>
+	{/if}
+</AnimatePresence>
 
 <div style="display:none">
 	{#each locales as locale (locale)}
