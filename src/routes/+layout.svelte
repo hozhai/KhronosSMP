@@ -35,7 +35,7 @@
 
 <ModeWatcher />
 
-<AppNavbar />
+<AppNavbar opaque={scrollY > 100} />
 
 <div id="top" class="h-0 w-screen"></div>
 

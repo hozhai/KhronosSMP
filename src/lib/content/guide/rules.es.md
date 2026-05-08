@@ -1,5 +1,7 @@
 ---
-title: 'Guía — Reglas (ES)'
+title: 'Reglas'
+date_published: 1778195811
+date_last_updated: 1778195811
 ---
 
 # Reglas — Español

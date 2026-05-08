@@ -10,13 +10,19 @@
 		NavigationMenuContent
 	} from './ui/navigation-menu/index';
 	import { cn } from '$lib/utils';
-	import TempleImage from '$lib/assets/temple.png';
+	import TempleImage from '$lib/assets/images/temple.png';
 	// @ts-ignore - generated Paraglide messages do not ship a declaration file here
 	import { getLocale, setLocale } from '$lib/paraglide/runtime';
 	// @ts-ignore - generated Paraglide messages do not ship a declaration file here
 	import * as m from '$lib/paraglide/messages';
 	import { Button } from './ui/button';
 	import Icon from '@iconify/svelte';
+
+	type AppNavbarProps = {
+		opaque: boolean;
+	};
+
+	const { opaque = false }: AppNavbarProps = $props();
 
 	const locale = (typeof getLocale === 'function' ? getLocale() : undefined) ?? 'en';
 	const lang = locale.split('-')[0] ?? 'en';
@@ -32,14 +38,19 @@
 
 	const components: { title: string; href: string; description: string }[] = [
 		{
+			title: m.navbar_guide(),
+			href: '/guide',
+			description: m.navbar_guide_desc()
+		},
+		{
 			title: m.navbar_rules(),
 			href: '/guide/rules',
 			description: m.navbar_rules_desc()
 		},
 		{
-			title: m.navbar_info(),
-			href: '/guide/info',
-			description: m.navbar_info_desc()
+			title: m.navbar_tutorial(),
+			href: '/guide/tutorial',
+			description: m.navbar_tutorial_desc()
 		}
 	];
 
@@ -73,7 +84,10 @@
 {/snippet}
 
 <motion.div
-	class="itms-center fixed top-4 left-1/2 z-50 flex w-[30vw] -translate-x-1/2 justify-center rounded-lg p-2"
+	class={cn(
+		'itms-center fixed top-4 left-1/2 z-50 flex w-[30vw] -translate-x-1/2 justify-center rounded-lg p-2 transition-colors duration-300 ',
+		opaque ? 'bg-card/80 backdrop-blur-lg' : ''
+	)}
 >
 	<NavigationMenuRoot>
 		<NavigationMenuList class="w-[30vw] items-start justify-between space-x-4 px-4">

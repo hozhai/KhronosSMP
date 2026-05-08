@@ -9,7 +9,11 @@
 	"home_about_content": "KhronosSMP es un pequeño MORPG (multiplayer online role-playing game) privado usando el tiempo como su concepto principal. Por cada segundo transcurrido, el contador baja por un segundo, solo siendo posible restaurar el tiempo a través de una travesía hacia el templo del tiempo, donde mediante una interacción con un objeto sagrado podrás restaurar una hora de tu tiempo. A través de ese viaje al templo, vas a conocer amigos y enfrentar enemigos; aquellos que te ayuden a cruzar la zona PvP, y aquellos que matarán por tiempo (o dinero) (o ambos). Si planeas en jugar, revisa",
 	"home_guide_text": "esta guía",
 	"navbar_rules": "Reglas",
-	"navbar_info": "Info",
+	"navbar_tutorial": "Tutorial",
+	"navbar_guide": "Guías",
+	"navbar_guide_desc": "¡Guías para ayudarte a familiarizar con el servidor!",
 	"navbar_rules_desc": "Las reglas de nuestro servidor, disponible en ambos Español e Inglés.",
-	"navbar_info_desc": "Averigua en más detalle el funcionamiento del servidor. ¡También disponible en ambos Español e Inglés!"
+	"navbar_tutorial_desc": "Averigua en más detalle el funcionamiento del servidor. ¡También disponible en ambos Español e Inglés!",
+	"guide_published": "Publicación",
+	"guide_last_updated": "Última actualización"
 }

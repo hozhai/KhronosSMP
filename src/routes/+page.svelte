@@ -1,17 +1,17 @@
 <script lang="ts">
 	import { motion, prefersReducedMotion } from 'motion-sv';
-	import TitleImage from '$lib/assets/server_title.png?enhanced';
-	import HeroBackground from '$lib/assets/hero-background.png?enhanced';
+	import TitleImage from '$lib/assets/images/server_title.png?enhanced';
+	import HeroBackground from '$lib/assets/images/hero-background.png?enhanced';
 	import { page } from '$app/stores';
 	import { Backlight } from '$lib/components/magic/backlight';
 	import { BlurFade } from '$lib/components/magic/blur-fade';
 	import { InteractiveHoverButton } from '$lib/components/magic/interactive-hover-button';
 	import Icon from '@iconify/svelte';
 	import { resolve } from '$app/paths';
-	// @ts-ignore - generated Paraglide messages do not ship a declaration file here
+	// @ts-expect-error Generated Paraglide messages do not ship a declaration file here
 	import * as m from '$lib/paraglide/messages';
 	import Seo from '$lib/components/Seo.svelte';
-	import HomeSeoImage from '$lib/assets/home_seo_image.png';
+	import HomeSeoImage from '$lib/assets/images/home_seo_image.png';
 </script>
 
 <svelte:head>

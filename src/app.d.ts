@@ -10,4 +10,40 @@ declare global {
 	}
 }
 
+declare module '$lib/content/guide/*.md' {
+	import type { SvelteComponent } from 'svelte';
+
+	export const frontmatter: Record<string, unknown>;
+	export const headings: Array<{ id: string; level: number; text: string }>;
+	export const slug: string;
+	export default class MarkdocComponent extends SvelteComponent {}
+}
+
+declare module '$lib/content/guide/*.mdoc' {
+	import type { SvelteComponent } from 'svelte';
+
+	export const frontmatter: Record<string, unknown>;
+	export const headings: Array<{ id: string; level: number; text: string }>;
+	export const slug: string;
+	export default class MarkdocComponent extends SvelteComponent {}
+}
+
+declare module '*.md' {
+	import type { SvelteComponent } from 'svelte';
+
+	export const frontmatter: Record<string, unknown>;
+	export const headings: Array<{ id: string; level: number; text: string }>;
+	export const slug: string;
+	export default class MarkdocComponent extends SvelteComponent {}
+}
+
+declare module '*.mdoc' {
+	import type { SvelteComponent } from 'svelte';
+
+	export const frontmatter: Record<string, unknown>;
+	export const headings: Array<{ id: string; level: number; text: string }>;
+	export const slug: string;
+	export default class MarkdocComponent extends SvelteComponent {}
+}
+
 export {};
