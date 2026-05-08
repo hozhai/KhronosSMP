@@ -3,6 +3,7 @@
 	import Seo from '$lib/components/Seo.svelte';
 	import { page } from '$app/stores';
 	import { getLocale } from '$lib/paraglide/runtime';
+	import { resolve } from '$app/paths';
 
 	const locale = (typeof getLocale === 'function' ? getLocale() : undefined) ?? 'en';
 	const lang = locale.split('-')[0] ?? 'en';
@@ -96,7 +97,7 @@
 	<div class="grid gap-6 md:grid-cols-2">
 		{#each current.cards as card (card.href)}
 			<a
-				href={card.href}
+				href={resolve(card.href)}
 				class="group rounded-3xl border border-border/70 bg-card/90 p-6 shadow-2xl shadow-black/10 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-amber-300/50 hover:bg-card focus-visible:-translate-y-1 focus-visible:border-amber-300/60 focus-visible:outline-none"
 			>
 				<div class="flex items-start justify-between gap-4">
