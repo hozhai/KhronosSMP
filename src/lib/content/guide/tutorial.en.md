@@ -21,7 +21,7 @@ By the way, the builds themselves are the safe areas. Check for a lime concrete 
 
 _The graph above is drawn over the actual world map of the spawn world, so it's relatively to scale._
 
-Each safe area (Portal, Spawn, and Temple) will be surrounded by a square outline consisting of 1 block wide lime concrete. Everything outside of that outline is the PvP zone.
+Each safe area (Portal, Spawn, and Temple) will be surrounded by a square outline consisting of 1 block wide lime concrete. Everything outside of that outline (the red part of the illustration above) is the PvP zone.
 
 In the PvP zone, you can:
 
