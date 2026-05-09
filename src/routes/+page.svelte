@@ -92,7 +92,7 @@
 	<p class="font-sans text-xl">
 		{m.home_about_content()}
 		<a
-			href={resolve('/guide/info')}
+			href={resolve('/guide/tutorial')}
 			class="bg-linear-to-tr from-orange-400 to-yellow-300 bg-clip-text text-clip text-transparent underline"
 			>{m.home_guide_text()}</a
 		>.
