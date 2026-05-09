@@ -4,7 +4,7 @@ date_published: 1778195811
 date_last_updated: 1778195811
 ---
 
-Applies to both the Minecraft and the Discord server.
+_Applies to both the Minecraft and the Discord server._
 
 ## 1) Respect only: no insults, threats, harassment nor discrimination. Treat each other with respect.
 
@@ -12,7 +12,7 @@ Jokes are fine, but how fine they are aren't decided by you; they're decided by 
 
 ## 2) No doxxing nor NSFW content allowed: sharing personal info or explicit material → kick.
 
-Self explanatory; absolutely no NSFW content allowed either in the Discord server or in the Minecraft server. However, the staff will be lenient with NSFW **jokes** as we're all teenagers after all. Rule 1 stll applies.
+Self explanatory; absolutely no NSFW content allowed either in the Discord server or in the Minecraft server. The staff, however, will be lenient with slightly NSFW **jokes** as we're all teenagers at the end of the day. Rule 1 stll applies.
 
 ## 3) Do not spam nor advertise without authorization.
 

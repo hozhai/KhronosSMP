@@ -10,6 +10,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import Icon from '@iconify/svelte';
 	import { AnimatePresence, motion } from 'motion-sv';
+	import Footer from '$lib/components/veil/footer/footer.svelte';
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
@@ -68,6 +69,8 @@
 		</motion.div>
 	{/if}
 </AnimatePresence>
+
+<Footer />
 
 <div style="display:none">
 	{#each locales as locale (locale)}
