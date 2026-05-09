@@ -138,6 +138,4 @@ Choose your preferred language from English or Spanish.
 
 And that's it for the tutorial! If the server receives updates that affect gameplay, this page will be updated accordingly. Do keep in mind this tutorial does **NOT** cover topics such as NPC Shops, the Spawn arenas, etc.
 
-_This document was written by a human. AI was used only in the process of proofreading._
-
 Thank you for choosing to play at KhronosSMP!
