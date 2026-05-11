@@ -30,7 +30,7 @@ Anything that gives you an unfair advantage against others will be considered il
 
 Any exploitation of bugs or dupes, whether in vanilla Minecraft or our server's custom plugin, shall be reported to the staff. _You may even be rewarded_.
 
-## 7) Do not grief or steal in the resource world: treat claims and items with respect—disputes are resolved through staff.
+## 7) Do not grief or steal in the resource world: treat claims and items with respect — disputes are resolved through staff.
 
 Griefing, stealing, and trapping **in the resource world** is an absolute no-go. If you are found to be griefing, stealing, or setting up intentional player traps, punishments will be issued.
 
@@ -38,7 +38,7 @@ Any disputes are to be resolved through staff.
 
 ## 8) Respect the server's mechanics: do not try to manipulate systems such as time, the Temple, or the menu for an unfair advantage.
 
-Exploiting mechanics to gain unfair advantages—such as duplicating items, manipulating the time system, or bypassing intended restrictions—is prohibited and treated the same as hacking.
+Exploiting mechanics to gain unfair advantages — such as duplicating items, manipulating the time system, or bypassing intended restrictions — is prohibited and treated the same as hacking.
 
 ## 9) Follow the staff's instructions: listen to our decisions; appeal through staff's DMs.
 

@@ -118,7 +118,7 @@ Fear not, for there is the Travel tab in the menu, which will instantly teleport
 
 ## Menu — Skills
 
-This button will lead you to another menu—specifically [AuraSkills](https://www.spigotmc.org/resources/auraskills.81069/)'s menu. Normally there'd be 11 skills, but we narrowed it down to the 9 most relevant ones:
+This button will lead you to another menu — specifically [AuraSkills](https://www.spigotmc.org/resources/auraskills.81069/)'s menu. Normally there'd be 11 skills, but we narrowed it down to the 9 most relevant ones:
 
 - **Archery**: Earn XP by shooting mobs and players with a bow. Increases your _Crit Chance_ and _Strength_.
 - **Fighting**: Earn XP by dealing damage to mobs and players with a sword. Increases your _Crit Damage_ and _Regeneration_.

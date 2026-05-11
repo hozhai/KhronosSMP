@@ -30,7 +30,7 @@ Cualquier cosa que te dé una ventaja injusta sobre otros jugadores se considera
 
 Cualquier explotación de bugs o duplicaciones, ya sea en Minecraft vanilla o en el plugin personalizado del servidor, debe ser reportada al staff. _Podrías incluso ser recompensado_.
 
-## 7) No hagas griefing ni robes en el mundo de recursos: trata los reclamos y objetos con respeto—las disputas se resuelven con el staff.
+## 7) No hagas griefing ni robes en el mundo de recursos: trata los reclamos y objetos con respeto — las disputas se resuelven con el staff.
 
 Hacer griefing, robar y colocar trampas **en el mundo de recursos** es inaceptable. Si se descubre que estás haciendo griefing, robando o colocando trampas intencionales para otros jugadores, se emitirán castigos.
 
@@ -38,7 +38,7 @@ Cualquier disputa debe ser resuelta a través del staff.
 
 ## 8) Respeta las mecánicas del servidor: no intentes manipular sistemas como el tiempo, el Templo o el menú para obtener una ventaja injusta.
 
-Explotar mecánicas para obtener ventajas injustas—como duplicar objetos, manipular el sistema de tiempo o evadir restricciones intencionales—está prohibido y se trata igual que hacer hacks.
+Explotar mecánicas para obtener ventajas injustas — como duplicar objetos, manipular el sistema de tiempo o evadir restricciones intencionales — está prohibido y se trata igual que hacer hacks.
 
 ## 9) Sigue las instrucciones del staff: escucha nuestras decisiones; apela a través de DMs del staff.
 
