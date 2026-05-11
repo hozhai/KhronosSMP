@@ -51,7 +51,7 @@ Now that you know what lies ahead in your journey, let's see where you chose to 
 
 ![KhronosSMP's Temple of Time](temple.png)
 
-Not quite a dome—more like a giant sandstone mountain.
+Not quite a dome — more like a giant sandstone mountain.
 
 You walk in. Its emptiness is broken only by an enormous floating nexus in the shape of a pyramid, along with an altar at ground level. What seems to be fragments of the pyramid surround the core.
 
@@ -67,19 +67,19 @@ The Temple of Time's nexus core is your main source of time in KhronosSMP, with 
 
 It's nice. There's an abandoned mine and a slightly less abandoned shop with their stock still on display, though no one remains.
 
-In front of you sits a portal—mystical and waiting. You step through...
+In front of you sits a portal — mystical and waiting. You step through...
 
 ## The Resource World
 
 ![A beautiful shot of the resource world](resourceworld.png)
 
-Whether you gathered time first or went straight through the portal—welcome to the Resource World!
+Whether you gathered time first or went straight through the portal — welcome to the Resource World!
 
 At first (when you have no spawnpoint set in the Resource World), you'll spawn at **the Rift**, an invisible location high above in the sky that brings players from the Portal to the Resource World. You will be given an _Ephemeral Elytra_, only lasting long enough to glide safely down where you can establish a base.
 
 **VERY IMPORTANT:** If your inventory is full and you're wearing chest armor, the elytra will replace it, dropping your armor to the ground below the Rift. The staff are **NOT** responsible for any items lost this way. _This unintended behavior may be fixed in the future._
 
-In the Resource World, PvP is disabled; griefing, stealing, and trapping are also illegal (see [rules](/guide/rules)). You can build, destroy, interact, and kill animals. In fact—you're encouraged to build your base here. Automatic farms are also allowed, as long as they don't start lagging the server.
+In the Resource World, PvP is disabled; griefing, stealing, and trapping are also illegal (see [rules](/guide/rules)). You can build, destroy, interact, and kill animals. In fact — you're encouraged to build your base here. Automatic farms are also allowed, as long as they don't start lagging the server.
 
 # The Menu
 
@@ -89,12 +89,12 @@ If you run `/m` or `/menu` in chat, a user interface will pop up allowing you to
 
 ## Menu — Time Management
 
-You can deinternalize time here. Just as you internalize Fragments of Time by right-clicking them, you can deinternalize your stored time—converting it back into items.
+You can deinternalize time here. Just as you internalize Fragments of Time by right-clicking them, you can deinternalize your stored time — converting it back into items.
 
 In case you got confused, the two types of time are:
 
-- **Internalized time** — The time on your counter, ticking down each second.
-- **Deinternalized time** — The time you hold as an item, in the form of a **Fragment of Time**.
+- **Internalized time**: The time on your counter, ticking down each second.
+- **Deinternalized time**: The time you hold as an item, in the form of a **Fragment of Time**.
 
 After choosing the amount of minutes to deinternalize, the time will appear in the 3x3 grid. Be careful: if you close the menu with a full inventory, the deinternalized time will drop to the ground.
 
@@ -112,7 +112,7 @@ You can leave your team anytime using the Teams tab in `/m`.
 
 ## Menu — Travel
 
-Wait—the Spawn World has a Portal to reach the Resource World, but the Resource World has no Portal to return... how can this be?
+Wait — the Spawn World has a Portal to reach the Resource World, but the Resource World has no Portal to return... how can this be?
 
 Fear not, for there is the Travel tab in the menu, which will instantly teleport you to the Portal safe area in the Spawn World. You, however, cannot use the Travel feature to teleport to the Portal when you're already in the Spawn World.
 
