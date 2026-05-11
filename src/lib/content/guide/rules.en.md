@@ -1,7 +1,7 @@
 ---
 title: 'Rules'
 date_published: 1778195811
-date_last_updated: 1778195811
+date_last_updated: 1778521096
 ---
 
 _Applies to both the Minecraft and the Discord server._
