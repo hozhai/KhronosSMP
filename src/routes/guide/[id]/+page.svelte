@@ -3,9 +3,7 @@
 	import { getLocale } from '$lib/paraglide/runtime';
 	import Seo from '$lib/components/Seo.svelte';
 	import TutorialBackground from '$lib/assets/images/tutorial-background.png?enhanced';
-	import TutorialSeoBackground from '$lib/assets/images/tutorial-seo-background.png?enhanced';
 	import RulesBackground from '$lib/assets/images/rules-background.png?enhanced';
-	import RulesSeoBackground from '$lib/assets/images/rules-seo-background.png?enhanced';
 	import TutorialEn, {
 		frontmatter as tutorialFrontmatterEn
 	} from '$lib/content/guide/tutorial.en.md';
@@ -26,7 +24,6 @@
 	const guides = {
 		info: {
 			background: TutorialBackground,
-			seoBackground: TutorialSeoBackground,
 			description: {
 				en: 'The information on how to play KhronosSMP, a Minecraft MORPG.',
 				es: 'La información sobre cómo jugar KhronosSMP, un MORPG de Minecraft.'
@@ -50,7 +47,6 @@
 		},
 		rules: {
 			background: RulesBackground,
-			seoBackground: RulesSeoBackground,
 			description: {
 				en: 'The rules of the kingdom of Khronos. Follow these or you shall be banished (for a certain period of time, or, you know, permanently).',
 				es: 'Las reglas del reino de Khronos. Síguelas o serás desterrado (por un tiempo, o, ya sabes, para siempre).'
@@ -91,7 +87,6 @@
 		embedTitle={`${frontmatter.title} - KhronosSMP`}
 		description={guide.description[localeKey]}
 		url={$page.url.href}
-		imageUrl={guide.seoBackground}
 	/>
 </svelte:head>
 

@@ -68,7 +68,6 @@
 		embedTitle={`${current.title} - KhronosSMP`}
 		description={current.description}
 		url={$page.url.href}
-		imageUrl={HeroBackground}
 	/>
 </svelte:head>
 

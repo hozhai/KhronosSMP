@@ -11,7 +11,6 @@
 	// @ts-expect-error Generated Paraglide messages do not ship a declaration file here
 	import * as m from '$lib/paraglide/messages';
 	import Seo from '$lib/components/Seo.svelte';
-	import HomeSeoImage from '$lib/assets/images/home_seo_image.png';
 </script>
 
 <svelte:head>
@@ -20,7 +19,6 @@
 		embedTitle="Home - KhronosSMP"
 		description="The home page of KhronosSMP, a time based MORPG in Minecraft. Join today!"
 		url={$page.url.href}
-		imageUrl={HomeSeoImage}
 	/>
 </svelte:head>
 
